@@ -1,0 +1,42 @@
+﻿@model AvengersBovedaMvc.Models.Artefacto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Artefacto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.poseedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.poseedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.energia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.energia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.artefactoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

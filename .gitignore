@@ -1,0 +1,14 @@
+# Archivos temporales de Visual Studio
+.vs/
+
+# Archivos compilados de .NET
+bin/
+obj/
+
+# Configuración personal del IDE
+*.user
+*.suo
+
+# Archivos temporales
+*.tmp
+*.log
