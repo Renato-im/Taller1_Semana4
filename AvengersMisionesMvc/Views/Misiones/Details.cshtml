@@ -1,0 +1,50 @@
+﻿@model AvengersMisionesMvc.Models.Mision
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mision</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Heroe.Alias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Heroe.Alias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amenaza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amenaza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MisionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
